@@ -15,8 +15,7 @@ services:
     depends_on:
       - hub
   nodejs:
-    build:
-      context: node-selenium
+    build: .
     volumes:
       - .:/app
       - node_modules_volume:/app/node_modules
