@@ -4,7 +4,7 @@ const webdriver = require("selenium-webdriver");
 const { Builder, By, until } = webdriver;
 
 const TIMEOUT_MILLISEC = 10000;
-const SCREENSHOT_PATH = 'scripts/images/'
+const SCREENSHOT_PATH = 'logs/images/'
 
 let driver;
 
@@ -52,6 +52,7 @@ describe("Google検索実行", () => {
   });
 });
 
+// 日付をフォーマット
 function formatDate(date) {
   let yyyy = date.getFullYear();
   let MM = ("0" + (date.getMonth() + 1)).slice(-2);
