@@ -2,6 +2,15 @@ const fs = require('fs');
 const { promisify } = require('util');
 const webdriver = require("selenium-webdriver");
 const { Builder, By, until } = webdriver;
+const capabilities = webdriver.Capabilities.chrome();
+capabilities.set("chromeOptions", {
+  args: [
+    "--headless",
+    "--no-sandbox",
+    "--disable-gpu",
+    `--window-size=1980,1200`
+  ]
+});
 
 const TIMEOUT_MILLISEC = 10000;
 const SCREENSHOT_PATH = 'logs/images/'
@@ -13,8 +22,8 @@ describe("Google検索実行", () => {
   // ここではブラウザを起動している
   before(() => {
     driver = new Builder()
-      .forBrowser("chrome")
       .usingServer("http://hub:4444/wd/hub")
+      .withCapabilities(capabilities)
       .build();
   });
 
