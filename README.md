@@ -22,7 +22,7 @@ $ git clone https://github.com/seconoid/docker-selenium
 ### Selenium 起動
 
 ```bash
-$ docker-compose up -d
+$ make up
 
 $ docker-compose ps
       Name                   Command            State            Ports
@@ -45,7 +45,7 @@ selenium_nodejs_1   docker-entrypoint.sh node   Exit 0
 サンプルテストを実行します。
 
 ```bash
-docker-compose run --rm nodejs npm run test
+make test
 
 
 Yahooポータルサイト
@@ -62,5 +62,5 @@ VNCView ではブラウザが操作されていることが確認できます。
 ### 終了
 
 ```bash
-$ docker-compose down
+$ make down
 ```
