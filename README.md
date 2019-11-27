@@ -58,7 +58,6 @@ Yahooポータルサイト
 テストがpassすればOKです。
 
 VNCView ではブラウザが操作されていることが確認できます。
-![screenshot](https://api.monosnap.com/file/download?id=8CfaH92FdhMqvjxP4WUmCIa8geo7qe)
 
 ### 終了
 
