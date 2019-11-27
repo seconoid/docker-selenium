@@ -1,13 +1,16 @@
 # selenium
 ## 概要
-Seleniumの環境構築が面倒だったため、Docker上で開発環境を再現できるように設定ファイルとサンプルスクリプトをまとめました。
-`docker-compose up -d`するだけでSeleniumとPythonおよびHeadless Chromeの環境が出来上がります。ブラウザを用いた処理を自動化したい場合や、テスト自動化のベースとしてご利用ください。HeadlessなのでGUI環境のないサーバー上でも動作します。
+Docker での Selenium テスト環境です。
+
+Selenium では WebDriver を利用してブラウザ操作することができます。
+つまり、Selenium でブラウザを操作 -> 想定通りに動作することを確認 といったテストをすることができます。
 
 ## 事前準備
-Dockerをインストールして、dockerコマンドとdocker-composeコマンドが使用できるようにしてください。
+* docker
+  * docker-compose が利用できればOK
 
 ## 使い方
-### インストールと起動方法
+### ダウンロード
 
 ```bash
 $ git clone https://github.com/sikkimtemi/selenium
