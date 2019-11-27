@@ -39,7 +39,7 @@ selenium_nodejs_1   docker-entrypoint.sh node   Exit 0
 
 以下の画面が表示されればOKです。
 
-[https://api.monosnap.com/file/download?id=VDeDjYw9OiednYqAsZzG4cGV10KTUG]
+![screenshot](https://api.monosnap.com/file/download?id=VDeDjYw9OiednYqAsZzG4cGV10KTUG)
 
 ### テスト実行
 サンプルテストを実行します。
@@ -58,7 +58,7 @@ Yahooポータルサイト
 テストがpassすればOKです。
 
 VNCView ではブラウザが操作されていることが確認できます。
-[https://monosnap.com/file/8CfaH92FdhMqvjxP4WUmCIa8geo7qe]
+![screenshot](https://monosnap.com/file/8CfaH92FdhMqvjxP4WUmCIa8geo7qe)
 
 ### 終了
 
