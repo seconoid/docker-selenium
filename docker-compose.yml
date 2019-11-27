@@ -16,6 +16,8 @@ services:
       - hub
   nodejs:
     build: .
+    environment:
+      - "TZ=Japan"
     volumes:
       - .:/app
       - node_modules_volume:/app/node_modules
