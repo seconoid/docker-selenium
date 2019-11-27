@@ -1,17 +1,24 @@
 .DEFAULT_GOAL := help
 
 
-build:
+build: # コンテナをビルド
 	docker-compose build
 
-serve:
+serve: # selenium コンテナ立ち上げ
 	docker-compose up -d
 
-test:
+test: # テストを実行
 	docker-compose run --rm nodejs npm run test
 
-down:
+down: # コンテナの終了
 	docker-compose down
+
+open_vnc: # VNCView の立ち上げ(pass: secret)
+	open vnc://localhost:5900
+
+open_hub: # selenium hub を表示
+	open http://localhost:4444/grid/console
+
 
 .PHONY: help
 help:

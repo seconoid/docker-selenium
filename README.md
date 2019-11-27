@@ -33,9 +33,12 @@ selenium_nodejs_1   docker-entrypoint.sh node   Exit 0
 ```
 
 ### VNCViewer起動
+ブラウザの様子を確認しながらテストすることができます。
+VNCView を起動しなくてもテストは実行されます。
 
-1. ブラウザで `vnc:localhost:4444` にアクセス 「画面共有を開く」を選択
-2. 接続先に `localhost`、 パスワードに `secret` を入力
+```bash
+$ make open_vnc
+```
 
 以下の画面が表示されればOKです。
 
