@@ -22,7 +22,8 @@ $ git clone https://github.com/seconoid/docker-selenium
 ### Selenium 起動
 
 ```bash
-$ make up
+$ make build
+$ make serve
 
 $ docker-compose ps
       Name                   Command            State            Ports
