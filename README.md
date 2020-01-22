@@ -41,6 +41,8 @@ VNCView を起動しなくてもテストは実行されます。
 $ make open_vnc
 ```
 
+(パスワード: `secret`)
+
 以下の画面が表示されればOKです。
 
 ![screenshot](https://api.monosnap.com/file/download?id=VDeDjYw9OiednYqAsZzG4cGV10KTUG)
